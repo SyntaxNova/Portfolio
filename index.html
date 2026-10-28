@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atharva Pachpute | Full-Stack Software Engineer & Distributed Systems</title>
+    <meta name="description" content="Portfolio of Atharva Pachpute - Full-Stack Software Engineer specializing in Spring Boot, Redis distributed caching, PostgreSQL, Gemini AI, and React." />
+    <meta name="keywords" content="Atharva Pachpute, Software Engineer, Spring Boot, Java, Redis, PostgreSQL, React, Pune, Portfolio" />
+    <meta property="og:title" content="Atharva Pachpute | Full-Stack Software Engineer" />
+    <meta property="og:description" content="Architecting high-throughput backend services, distributed systems & AI-driven applications with Spring Boot, Redis, PostgreSQL, and React." />
+    <meta property="og:image" content="/profile.png" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#07090e] text-slate-100 antialiased selection:bg-indigo-500/30 selection:text-white overflow-x-hidden">
+    <!-- MANDATORY: Purely decorative visual scroll progress bar with aria-hidden="true" per modern-web-guidance -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <div id="root"></div>
+
+    <!-- Modern Web Guidance Fallback for browsers without animation-timeline: scroll() -->
+    <script>
+      (function() {
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && (!window.CSS || !CSS.supports('animation-timeline', 'scroll()'))) {
+          const progress = document.getElementById('scroll-progress');
+          if (progress) {
+            window.addEventListener('scroll', () => {
+              const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+              if (scrollable > 0) {
+                const scrolled = window.scrollY;
+                progress.style.transform = `scaleX(${scrolled / scrollable})`;
+              }
+            }, { passive: true });
+          }
+        }
+      })();
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
