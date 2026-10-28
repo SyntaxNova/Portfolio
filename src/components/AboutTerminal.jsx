@@ -176,7 +176,6 @@ export default function AboutTerminal() {
                   onChange={(e) => setInputVal(e.target.value)}
                   placeholder="type command (e.g., whoami, stats, certs)..."
                   className="flex-1 bg-transparent text-slate-100 focus:outline-none font-mono caret-cyan-400 text-xs sm:text-sm"
-                  autoFocus
                 />
                 <button
                   type="submit"

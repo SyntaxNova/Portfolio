@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AboutTerminal from './components/AboutTerminal';
@@ -12,6 +12,12 @@ import BackgroundCanvas from './components/BackgroundCanvas';
 import CustomCursor from './components/CustomCursor';
 
 export default function App() {
+  useEffect(() => {
+    if (!window.location.hash) {
+      window.scrollTo(0, 0);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#07090e] text-slate-100 relative selection:bg-indigo-500/30 selection:text-white">
       {/* Interactive Canvas Starfield / Constellation */}
