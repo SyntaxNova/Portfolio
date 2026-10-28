@@ -27,7 +27,7 @@ export default function SystemSandbox() {
   const [fetchStats, setFetchStats] = useState({ hits: 0, misses: 0, totalMsSaved: 0 });
 
   // Base62 Shortener State
-  const [longUrlInput, setLongUrlInput] = useState('https://github.com/SyntaxNova/FinNova-AI');
+  const [longUrlInput, setLongUrlInput] = useState('https://github.com/SyntaxNova/FinNova-AI-Powered-Personal-Finance');
   const [shortUrlResult, setShortUrlResult] = useState(null);
 
   // Mini Algo Simulator State
@@ -38,7 +38,7 @@ export default function SystemSandbox() {
 
   // Redis Simulator Logic
   const sampleData = {
-    'finnova-dashboard': { id: 101, url: 'https://finnova-ai.vercel.app/user/dashboard', title: 'FinNova AI Dashboard' },
+    'finnova-dashboard': { id: 101, url: 'https://finnova-ai-finance.vercel.app/', title: 'FinNova AI Dashboard' },
     'spring-security-jwt': { id: 102, url: 'https://spring.io/projects/spring-security', title: 'Spring Security Docs' },
     'redis-cache-spec': { id: 103, url: 'https://redis.io/docs/data-types/strings/', title: 'Redis Cache-Aside Pattern' },
     'aws-vpc-architecture': { id: 104, url: 'https://aws.amazon.com/vpc/', title: 'AWS Cloud Architecting Spec' }

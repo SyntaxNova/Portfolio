@@ -150,8 +150,8 @@ export const projectsData = [
       backend: "Spring Boot REST Controller → Service Layer → JPA Repository",
       dataAi: "PostgreSQL Database + Google Gemini Pro AI API"
     },
-    githubUrl: "https://github.com/SyntaxNova/FinNova-AI",
-    liveUrl: "https://finnova-ai-demo.vercel.app"
+    githubUrl: "https://github.com/SyntaxNova/FinNova-AI-Powered-Personal-Finance",
+    liveUrl: "https://finnova-ai-finance.vercel.app/"
   },
   {
     id: "url-shortener",
@@ -191,8 +191,8 @@ export const projectsData = [
       backend: "Spring Boot Microservice + Base62 Encoding Engine + DTO Validator",
       data: "PostgreSQL with B-tree index on short_code for O(1) lookups"
     },
-    githubUrl: "https://github.com/SyntaxNova/url-shortener-service",
-    liveUrl: "https://short-link-service.vercel.app"
+    githubUrl: "https://github.com/SyntaxNova/url-shortener",
+    liveUrl: "https://urlshortner-gold-seven.vercel.app/"
   },
   {
     id: "algovision",
